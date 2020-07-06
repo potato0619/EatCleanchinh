@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgrthemmonan2"
+    tools:context=".SeachActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center|top"
+        android:text="Tìm Món Ăn"
+        android:textSize="50sp"
+        android:textColor="#A83E3E3E"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="12"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        >
+        <EditText
+            android:id="@+id/ed_tk"
+            android:layout_width="match_parent"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:hint="Nhập Tên Món Ăn"
+            android:textStyle="italic"
+            android:lines="1"
+            android:maxLines="1" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/ed_tk"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        />
+    </LinearLayout>
+</LinearLayout>
