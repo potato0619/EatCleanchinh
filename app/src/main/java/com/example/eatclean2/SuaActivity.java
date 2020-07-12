@@ -45,7 +45,7 @@ public class SuaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sua);
         Intent intent=getIntent();
-        final Monan monan= (Monan) intent.getSerializableExtra("monan");
+        final Monan monan= (Monan) intent.getSerializableExtra("monan");//truyền đối tượng tự định nghĩa.
         id=intent.getIntExtra("i",0);
         vitri=intent.getIntExtra("vitri",0);
 

@@ -64,6 +64,7 @@ public class SeachActivity extends AppCompatActivity {
                     return true;
                 }
                 if(key.equals("")){
+                    //kí tự tìm kiếm trống thì...hiện all
                     //adapter=new adapter(monans,SeachActivity.this);
                     LinearLayoutManager linearLayoutManager=new LinearLayoutManager(SeachActivity.this);
                     linearLayoutManager.setOrientation(RecyclerView.VERTICAL);
@@ -111,7 +112,6 @@ public class SeachActivity extends AppCompatActivity {
             }
 
         });
-
         recyclerview=findViewById(R.id.recyclerview);
         adapter2=new adapter2(monans,SeachActivity.this);
         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(SeachActivity.this);

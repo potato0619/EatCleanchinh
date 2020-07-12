@@ -24,7 +24,8 @@
         android:textColor="#000"
         android:layout_marginLeft="10dp"
         android:textSize="15dp"
-        android:text="video hướng dẫn tăng cân"
+        android:text="Video Bài Tập"
+        android:gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
     <androidx.recyclerview.widget.RecyclerView

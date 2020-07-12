@@ -125,7 +125,6 @@ public class ChitietThudonActivity extends AppCompatActivity {
 
 
 
-
         FloatingActionButton floatingActionButton=findViewById(R.id.add);
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">EatClean2</string>
+    <string name="txtCredits"><a href="http://www.google.com">Google</a></string>
 </resources>
